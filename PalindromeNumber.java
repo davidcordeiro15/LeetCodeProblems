@@ -1,17 +1,14 @@
 class Solution {
     public boolean isPalindrome(int x) {
         String num = Integer.toString(x); 
-        String[] charNum = new String[num.length()];
-        int sum = 0; 
-        for (int i = 0; i < charNum.length; i++){
-            if (charNum[i].equals(charNum[charNum.length-i-1])){
-                sum += 1; 
-            }
-        }
-        if (sum == charNum.length) {
-            return true; 
-        } else {
+        if (x < 0){
             return false; 
         }
+        for (int i = 0; i < num.length(); i++){ 
+            if (num.charAt(i) != num.charAt(num.length()-i-1)){
+                return false; 
+            }
+        }
+        return true;
     }
 }
