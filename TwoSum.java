@@ -2,10 +2,10 @@ class Solution {
     public int[] twoSum(int[] nums, int target) {
        
 
-        //Declarar o Hash Map com duas variáveis
+        //Declarar o   Hash Map com duas variáveis
         Map<Integer, Integer> ids = new HashMap<>();
 
-        //realizar o for procurando pelas keys do map 
+        //realizar o "for" procurando pelas keys do map 
         for (int i =0; i< nums.length; i++){
             //declarar variável para identificar a key
             int num = nums[i];
