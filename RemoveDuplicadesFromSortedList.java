@@ -18,7 +18,7 @@ class Solution {
                 current.next = new ListNode(head.val); // Crai-se um novo  nódulo
                 current = current.next;
             } 
-            head = head.next; 
+            head = head.next; // Retorna a nova lista, ignorando o nó fictício
     
         }
         return list.next; 
